@@ -1,0 +1,19 @@
+Part 1- Building VMs
+    Guide:
+    1. When inside of VirtualBox, locate the blue icon that says "New"
+    2. Fill in the name of your VM and what type/version. In this case, we will be using Linux and Ubuntu 64-bit
+    3. Next step is to give your VM the memory size you want. In this case, we will be using 4096 MBs.
+    4. The next step is to determine what hard disk you will be using. We will be using the option of "Create a virtual hard disk now."
+    5. The next step is to choose what hard disk file type and we will be using VDI (VirtualBox Disk Image)
+    6. The next step is to determine how much storage you want your VM to have. I went with a fixed size of 10 GBs for the fact it is recommended for that size and I do not want to run out of space on my host machine with the many VMs I have for school.
+    7. I allow 3D acceleration because I do have a GPU the VMs can use and would like my VMs to run faster.
+    8. I did include guest additions for my VM because it is always nice to have a full screen! It will also allow the user to connect any hardware to the guest OS (like a USB drive).
+        a. You need to install VirtualBox extension pack. In order to install VirtualBox extension pack (VirtualBox), you need to down load the file from the internet. Then, you need to go to the settings of your VM. Once there, go to the option of Extensions and click the drop down menu and select the file you downloaded
+
+Part 2- Exploring Virtualization
+    1. I cannot access files and folders from my host that are located on my guest OS. I did some research as to why and it is because I have not shared them. Guest Additions would provide a virtual file system to allow me to do so.
+    2. This step was interesting because VirtualBox has to ways to clone a machine. First, a snapshot is a very small file that stores the state of the VM (like a restore point). My file is only 2 MB.
+        a. A template (or clone for VirtualBox) is an copy of your VM. Now VirtualBox has two options for cloning: full clone or linked clone.
+        b. Full clone - an exact copy of your VM that you can transport from machine to machine.
+        c. Linked clone - Its a new VM but the virtual hard disk files are tied to the original VM and you cannot move the new VM to another machine without the original VM itself.
+    3. 
