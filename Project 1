@@ -16,4 +16,10 @@ Part 2- Exploring Virtualization
         a. A template (or clone for VirtualBox) is an copy of your VM. Now VirtualBox has two options for cloning: full clone or linked clone.
         b. Full clone - an exact copy of your VM that you can transport from machine to machine.
         c. Linked clone - Its a new VM but the virtual hard disk files are tied to the original VM and you cannot move the new VM to another machine without the original VM itself.
-    3. 
+    3. The hypervisor allows the VM to access the hardware found on the host machine and use that piece of hardware. Inside of VirtualBox, you have different options on how you want your VM to access the outside world. Options like: Bridged Adapter, NAT, and host-only networking. 
+        a. NAT enables makes the VM act like a real computer accessing the internet through a router. The router is the VirtualBox engine and maps the traffic through it.
+        b. The guest acts like it is physically connected to the host using the hosts hardware to do the connecting. 
+        c. Host-only is like an isolated network where only the host and VM can talk to one another. The VM does not appear on the external network and cannot be accessed through the external network.
+
+Part 3- Networking with style
+    The network configuration I will be testing out is bridged networking. The way you choose this option is go to "Settings" in VirtualBox. On the left hand side you will see where it says "Network" and click on it. On the drop down menu, you will select "Bridged Adapter" and use whatever option you have on your host machine. Then you will press OK. Log into your VM and open up a terminal. Run the command "ifconfig" and find the line where it says "inet" and see what your IP address is. In my case, it is 192.168.1.110 and I do have internet access now.
