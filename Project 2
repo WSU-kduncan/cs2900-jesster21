@@ -1,33 +1,33 @@
 Singularity
     How to install:
-    a.	Go to the website https://sylabs.io/singularity
-    b.	Click “Get Now” under SingularityCE
-    c.	Under Downloads, you will find the filename of “singularity-ce-3.8.3.tar.gz”. Download that file and save it to your Downloads folder.
-    d.	Change your directory to “Downloads.” In order to unzip the tar file, you need to run the command “tar -xvf singularity-ce-3.8.3.tar.gz”.
-    e.	Change your directory in your terminal to “singularity-ce-3.8.3”.
-    f.	Run the command “chmod +x mconfig” to change the permissions of the file in order for you to be able to execute it later.
-    g.	Scroll to the top of the page and find the sentence “Documentation is available at https://sylabs.io/docs” and click on that link. These are the instructions to install the container.
-    h.	Find “v.3.8” and click on the HTML file under “User Guide”.
-    i.	Scroll down to “Quick Installation Steps” and install all of the libraries the container needs to run (there should be 10 of them).
-    j.	The container also needs “Go” to be installed. Click the link titled “Go to Downloads Page”.
-    k.	Click the download titled “go1.17.1.linux-amd64.tar.gz”.
-    l.	At the top of the page, there is a link that says “installation instructions.’ Click on the link.
-    m.	You need to be root for these next couple of steps so run the command “sudo su” in your terminal and change your directory to “Downloads”.
-    n.	On the website, copy and paste the command “rm -rf /usr/local/go && tar -C /usr/local -xzf go1.17.1.linux-amd64.tar.gz” into your terminal.
-    o.	Copy and paste the next command into your terminal as well: “export PATH=$PATH:/usr/local/go/bin”.
-    p.	To verify that you correctly installed “Go”, run the command “go version” and you should see “go version go1.17.1 linux/amd64”.
-    q.	Now change your directory to “singularity-ce-3.8.3” inside of the “Downloads” folder.
-    r.	Now to compile the SinularityCE source code, run the following command:
-    i.	“./mconfig && make -C builddir && sudo make -C builddir install”.
-    s.	It will take a few minutes to install. Once it is finished run the command “singularity help” to see if it works!
+    1.	Go to the website https://sylabs.io/singularity
+    2.	Click “Get Now” under SingularityCE
+    3.	Under Downloads, you will find the filename of “singularity-ce-3.8.3.tar.gz”. Download that file and save it to your Downloads folder.
+    4.	Change your directory to “Downloads.” In order to unzip the tar file, you need to run the command “tar -xvf singularity-ce-3.8.3.tar.gz”.
+    5.	Change your directory in your terminal to “singularity-ce-3.8.3”.
+    6.	Run the command “chmod +x mconfig” to change the permissions of the file in order for you to be able to execute it later.
+    7.	Scroll to the top of the page and find the sentence “Documentation is available at https://sylabs.io/docs” and click on that link. These are the instructions to install the container.
+    8.	Find “v.3.8” and click on the HTML file under “User Guide”.
+    9.	Scroll down to “Quick Installation Steps” and install all of the libraries the container needs to run (there should be 10 of them).
+    10.	The container also needs “Go” to be installed. Click the link titled “Go to Downloads Page”.
+    11.	Click the download titled “go1.17.1.linux-amd64.tar.gz”.
+    12.	At the top of the page, there is a link that says “installation instructions.’ Click on the link.
+    13.	You need to be root for these next couple of steps so run the command “sudo su” in your terminal and change your directory to “Downloads”.
+    14.	On the website, copy and paste the command “rm -rf /usr/local/go && tar -C /usr/local -xzf go1.17.1.linux-amd64.tar.gz” into your terminal.
+    15.	Copy and paste the next command into your terminal as well: “export PATH=$PATH:/usr/local/go/bin”.
+    16.	To verify that you correctly installed “Go”, run the command “go version” and you should see “go version go1.17.1 linux/amd64”.
+    17.	Now change your directory to “singularity-ce-3.8.3” inside of the “Downloads” folder.
+    18.	Now to compile the SinularityCE source code, run the following command:
+    19.	“./mconfig && make -C builddir && sudo make -C builddir install”.
+    20.	It will take a few minutes to install. Once it is finished run the command “singularity help” to see if it works!
 
 Podman
     How to install:
-    a.	Go to the website https://podman.io
-    b.	Under “Installing Podman”, click the link labeled “installation instructions”.
-    c.	Scroll down until you find Ubuntu
-    d.	Run the commands “sudo apt-get -y update” and “sudo apt-get -y install podman”
-    e.	Run the command "podman –help" to see if it worked!
+    1.	Go to the website https://podman.io
+    2.	Under “Installing Podman”, click the link labeled “installation instructions”.
+    3.	Scroll down until you find Ubuntu
+    4.	Run the commands “sudo apt-get -y update” and “sudo apt-get -y install podman”
+    5.	Run the command "podman –help" to see if it worked!
 
 Pulling a container image
     1.  Singularity: View container images
