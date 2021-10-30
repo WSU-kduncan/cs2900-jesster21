@@ -1,5 +1,5 @@
 1.	Investigate available mounts
-    a.	Docker:
+    a. Docker:
         i.	Mount types available are bind mounts and volumes.
         ii.	Volumes: store data but do not control where the data is stored. Bind mounts: control the exact mountpoint on the host and while you can use it to persist data, its often used to provide additional data into containers
     b.	Singularity:
@@ -18,3 +18,5 @@
             1.	FROM debian:latest
             2.	RUN apt-get update
             3.	COPY some_file
+
+I want to apogize in advance. I do not know why it looks terrible on github when I pushed it through. It looks fine on visual studio code!
