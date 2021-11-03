@@ -1,6 +1,6 @@
 1. Investigate available mounts
     a. Docker:
-        i. Moun ttypes available are bind mounts and volumes
+        i. Mount types available are bind mounts and volumes
         ii. Volumes: store data but do not control where the data is stored. Bind mounts: control the exact mountpoint on the host and while you can use it to persist data, it is often used to provide additional data into containers
     b. Sinularity:
         i. The mount type is bind mount.
