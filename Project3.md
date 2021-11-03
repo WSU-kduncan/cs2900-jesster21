@@ -7,7 +7,7 @@
         ii. The bind mount is a shared folder on the system. Outside containers cannot access the data inside the host container.
 
 2. Investigate building images for the container engine
-      a. Docker:
+    a. Docker:
         i. Command: docker image build
         ii. Write a build file:
             FROM debian:latest
